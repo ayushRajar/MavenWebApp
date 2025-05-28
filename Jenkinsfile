@@ -23,7 +23,7 @@ pipeline{
 		
 		stage('Achieve') {
 			steps{
-				achieveArtifacts artifacts : 'target/*.war' fingerprint:true
+				achieveArtifacts artifacts : 'target/*.war', fingerprint:true
 			}
 		}
 		stage('Deploy'){
